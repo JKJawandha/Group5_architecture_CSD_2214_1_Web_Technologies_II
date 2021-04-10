@@ -1,0 +1,285 @@
+body{
+    margin:auto;
+    width: 90%;
+    font-family: Candara,SANS-SERIF;
+    background: rgb(252, 250, 229);
+}
+.image-logo{
+    position: relative;
+}
+.logo{
+    float: left;
+    padding: 0px 30px 0px 80px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.logo-nav{
+    position: relative;
+}
+.logo-nav:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.hero-img{
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../logo1.jpg");
+    background-position: center;
+}
+.logo h3{
+    font-size: 30px;
+}
+span#amount{
+    color: red;
+}
+.header {
+    position: relative;
+    padding: 85px 20px 2px 80px;
+    color:white;
+}
+.header h1{
+    font-size: 60px;
+    font-weight: lighter;
+}
+.header p{
+    font-size: 21px;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+/*navigation bars*/
+.navbar{
+    float: right;
+    padding: 20px 80px;
+    list-style-type: none;
+ }
+ ul{
+    
+    list-style-type: none;
+ }
+ 
+ ul li{
+    
+     display: inline-block;
+ }
+ 
+ ul li a{
+     
+     text-decoration: none;
+     color: rgb(12, 11, 11);
+     padding: 10px 20px;
+     border: 1px solid transparent;
+     transition: 0.6s ease;
+ }
+ 
+ ul li a:hover{
+     background-color: rgb(241, 235, 235);
+     color: #ee853f;
+ }
+ 
+ ul li.active a{
+     background-color: #fff;
+     color: #ee853f;
+
+ }
+ 
+ .search input{
+    background-color: #e6dddd;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px; 
+  }
+  
+  .search input:hover{
+      background-color: #fff;
+      color: rgb(199, 190, 190);
+      size: 2px;
+  }
+
+
+
+.products{
+    padding-left: 80px;
+    padding-top: 50px;
+}
+.products .img-data{
+    float: left;
+}
+.products .p-row{
+    font-size: 22px;
+}
+.products .p-row:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.products img{
+    width: 400px;
+    height: 400px;
+    
+}
+.products .img-data{
+    padding:10px 61px;
+    border-left: 40px solid rgb(204, 203, 144);
+    border-right: 40px solid rgb(204, 203, 144);
+}
+.products .data{
+    padding: 10px 0px;
+}
+.products .data .price{
+    padding: 10px 0px;
+}
+.products .data .price span{
+    padding-right: 60px;
+    padding-left: 10px;
+}
+.products .data .price span#input{
+    padding-right: 0px;
+}
+.products .data .price input{
+    width: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+}
+.products .data button{
+    padding: 20px 100px;
+    font-size: 22px;
+    margin-left: 10px;
+    background: rgb(177, 177, 243);
+}
+/* .products .data button input[type="checkbox"]{
+    padding: 20px;
+    idth: 30px;
+    background: black;
+    border: none;
+    color: pink;
+} */
+.products .data h2{
+    text-align: center;
+    margin: auto;
+}
+button#my-cart{
+    padding: 20px 260px 20px 340px;
+    margin: 50px 0px 50px 0px;
+    background: rgb(140, 140, 202);
+}
+button#my-cart .cart-btn .cart{
+    float: left;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-right: 200px;
+    transform: scale(2,1);
+}
+button#my-cart .cart-btn .item{
+    font-size: 30px;
+    border-left: 3px solid rgb(95, 95, 179);
+    overflow: hidden;
+}
+button#my-cart .cart-btn{
+    width: 600px;
+}
+button#my-cart .cart-btn:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/*
+HOVER
+*/
+.products .data:hover{
+    background: rgba(221, 221, 221, 0.856);
+}
+.products .data button:hover{
+    background: rgb(89, 89, 145);
+    color: white;
+}
+button#my-cart:hover{
+    background: rgb(89, 89, 145);
+    color: rgba(255, 255, 255, 0.719);
+}
+
+
+/*footer*/
+.footer-box{
+    position: relative;
+  }
+.row-coloum{
+    margin-left: 80px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.footer{
+    background-color: black;
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding: 70px 0px;
+}
+.footer-aboutus{
+    float: left;
+    width: 310px;
+    margin: 0px 65px 0px 0px;
+}
+.footer-contact{
+    float: left;
+    width: 310px;
+    margin: 0px 25px 0px 65px;
+}
+.footer-news{
+    float: left;
+    width: 310px;
+    margin: 0px 0px 0px 25px;
+}
+.headings{
+    font-size: 20px;
+}
+.footer-text{
+    font-size: 17px;
+    word-spacing: 1px;
+    line-height: 25px;
+    color: #b4b4b4;
+}
+.footer-text i{
+    font-size: 25px;
+    color: white;
+}
+.footer-text a{
+    line-height: 20px;
+}
+.footer-text a:hover{
+    color: #AF8855;
+}
+.fa-map-marker{
+    margin-left: 2px;
+}
+.fa-phone{
+    margin-left: -5px;
+}
+
+.row-coloum:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.footer-downside{
+    
+}
+.down-left{
+    float: left;
+}
+.down-right{
+    float: right;
+    margin-right: 80px;
+}
+

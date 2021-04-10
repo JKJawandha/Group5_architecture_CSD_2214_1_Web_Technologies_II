@@ -1,0 +1,60 @@
+body{
+    background: rgb(252, 250, 229);
+    font-family: Candara,SANS-SERIF;
+}
+#register .head{
+    margin: auto;
+    width: 250px;
+    font-size: 40px;
+}
+#register{
+    display: block;
+    border: 2px solid black;
+    width: 550px;
+    margin: auto;
+    margin-top: 200px;
+    background: rgb(0, 195, 255);
+}
+#login{
+    display: none;
+    border: 2px solid black;
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+    background: rgb(0, 195, 255);
+}
+#login p{
+    font-size: 30px;
+    color: rgb(14, 14, 158);
+}
+a#submit{
+    text-decoration: none;
+    border:1px solid black;
+    padding: 2px 43px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+    font-family: Candara,SANS-SERIF;
+    font-weight: bold;
+    background: rgb(252, 250, 229);
+}
+input{
+    padding: 6px 15px;
+}
+button#btn-register{
+    padding: 2px 43px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-family: Candara,SANS-SERIF;
+    font-weight: bold;
+}
+table{
+    font-size: 35px;
+}
+span{
+    font-size: 15px;
+    color: red;
+}

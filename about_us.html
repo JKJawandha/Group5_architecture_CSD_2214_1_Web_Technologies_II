@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About us</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        function readmore(){
+            var a = document.getElementById("about..");
+            a.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing"+
+                        "elit, sed do eiusmod tempor incididunt ut labore"+
+                        "et dolore magna aliqua. Ut enim ad minim veniam, quis"+ 
+                        "nostrud exercitation ullamco laboris nisi ut aliquip ex"+ 
+                        "ea commodo consequat.";
+        }
+        $(document).ready(function(){
+            var boxWidth = $(".text-box1").width();
+
+            $(".row .image1").click(function(){
+            $(".text-box1").animate({
+                width: 0
+                },200);  
+            });
+            $(".row .image1").click(function(){
+            $(".text-box1").animate({
+                width: 600
+                });
+            });
+
+            $(".row .image2").click(function(){
+            $(".text-box2").animate({
+                width: 0
+                },200);  
+            });
+            $(".row .image2").click(function(){
+            $(".text-box2").animate({
+                width: 600
+                });
+            });
+
+            $(".row .image3").click(function(){
+            $(".text-box3").animate({
+                width: 0
+                },200);  
+            });
+            $(".row .image3").click(function(){
+            $(".text-box3").animate({
+                width: 600
+                });
+            });
+
+            $(".row .image4").click(function(){
+            $(".text-box4").animate({
+                width: 0
+                },200);  
+            });
+            $(".row .image4").click(function(){
+            $(".text-box4").animate({
+                width: 600
+                });
+            });
+            
+                $("#header").animate({
+                    'font-size':"100"
+            },500)
+                $(".header").animate({
+                    'padding':'1px 20px 1px 80px'
+            },500)
+
+                $("#header").animate({
+                    'font-size':"60px"
+            },500)
+                $(".header").animate({
+                    'padding':'85px 20px 2px 80px'
+            },500)
+        
+        });
+        
+    </script>
+</head>
+<body>
+    <div class="whole">
+        <!-- main -->
+    <div class= image-logo>
+        <div class="logo-nav">
+            <div class=logo>
+                <img src="arclogo.jpg">
+            </div>
+            <div class="navbar">
+                <ul>
+
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="active"><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><div class=search>
+                            <input type="text" placeholder="Search..." name="search"> 
+                        </div>
+                    </li>     
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div class= header>
+                <h1 id="header">About Us</h1><br>
+                <P id="header_p"><a href="home.html">Home</a>  &nbsp; >  &nbsp; <a href="about_us.html">About Us</a></P>    
+            </div>
+        </div>
+    </div>
+    <div class="row1">
+        <div class="row1-left">
+            <h1>A Few Words About Us</h1>
+            <p class="one">R&CO is a team of highly talented, experienced,
+                 and award-winning architects and designers.</p>
+            <p>Our company has been the leading provider of architecture
+                 services to clients throughout the USA since 1999.
+                 We pay attention to every demand of our customers.<span id="about.."></span></p>
+            <div class="row1-button">
+                <button id="but1" onclick= >VIEW PROJECTS</button>
+                <button id="but" onclick="readmore()">READ MORE</button>
+            </div>
+        </div>
+        <div class="row1-right">
+           <img src=images/img1.jpg> 
+        </div>
+    </div>
+    <div class="row2">
+        <div class="box">
+            <div class="row">
+                <div class="image1">
+                    <img src="images/img2.jpg">
+                </div>
+                <div class="line">
+                    <div class="circle"></div>
+                    <div class="vr-line"></div>
+                </div>
+                <div class="text-box1">
+                    <div class="text">
+                        <p class="date">APRIL 2014</p>
+                        <p class="title">Apex Hotel</p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                            ea commodo consequat.</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="image2">
+                    <img src="images/img3.jpg">
+                </div>
+                <div class="line">
+                    <div class="circle"></div>
+                    <div class="vr-line"></div>
+                </div>
+                <div class="text-box2">
+                    <div class="text">
+                        <p class="date">MARCH 2017</p>
+                        <p class="title">The Edwards Lodge</p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                            ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image3">
+                    <img src="images/img4.jpg">
+                </div>
+                <div class="line">
+                    <div class="circle"></div>
+                    <div class="vr-line"></div>
+                </div>
+                <div class="text-box3">
+                    <div class="text">
+                        <p class="date">MAY 2015</p>
+                        <p class="title">Atlanta Child Care Center</p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                            ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image4">
+                    <img src="images/img5.jpg">
+                </div>
+                <div class="line">
+                    <div class="circle"></div>
+                    <div class="last-vr-line"></div>
+                </div>
+                <div class="text-box4">
+                    <div class="text">
+                        <p class="date">DECEMBER 2020</p>
+                        <p class="title">Los Angeles Art Gallery</p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                            ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row3">
+        <div class="row3-heading">
+            <h1>Who we Are</h1>
+        </div>
+        <div class="r1">
+            <div class="img-box">
+                <img src="images/P1.png">
+            </div>
+            <div class="img-box">
+            <img src="images/P2.png">
+        </div>
+        <div class="img-box">
+            <img src="images/P3.png">
+            </div>
+        </div>
+        <div class="r1">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        <div class="img-box">
+            <img src="images/P4.png">
+        </div>
+        <div class="img-box">
+            <img src="images/P5.png">
+        </div>
+        <div class="img-box">
+            <img src="images/P6.PNG">
+            </div>
+        </div>
+    </div>
+    <div class="footer-box">
+
+
+        <footer class="footer">
+            <div class="footer-all">
+             <div class="row-coloum">
+                     <div class="footer-aboutus">
+                         <div class="headings">
+                             <b>ABOUT US</b>
+                         </div>
+                         <p class="footer-text">R&CO company is a diversified global architecture 
+                             company that brings the best designers and 
+                             architects together. We have been offering 
+                             great design solutions to individual and 
+                             corporate customers worldwide since the late 1990s.</p>
+                     </div>
+                     <div class="footer-contact">
+                         <div class="headings">
+                             <b>CONTACT INFORMATION</b>
+                         </div>
+                         <p class="footer-text">
+                             <a><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2130 Fulton street<br>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Diego, CA 94117-1080 UAS</a><br><br>
+                             <a><i class="fa fa-fw fa-phone"></i>&nbsp;&nbsp;&nbsp;1-800-1234-567</a><br><br>
+                             <a><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;info@demolink.org</a>
+                         </p>
+                     </div>
+                     <div class="footer-news">
+                         <div class="headings">
+                             <b>NEWSLETTER</b>
+                         </div>
+                         <P class="footer-text">Sign up to our newsletter and be the first to know 
+                             about the latest news, special offers, events,
+                             and discounts.</P>
+                         <div class="input-email">
+                             <input type="text" placeholder="E-mail">
+                             <button><i class="fa fa-envelope"></i></button>
+                         </div>
+                         
+                     </div>
+                 </div>
+                 <div class="footer-downside">
+                     <div class="footer-logo">
+                        <div class=logo>
+                            <img src="arclogo.jpg">
+                        </div>
+                     </div>
+                     <P class="down-right">&copy;2021 All Rights Reserved. Privacy Policy</P>
+                 </div>
+             </div>
+            
+        </footer>
+        </div>
+        <script>
+            function funA(){
+                let url = new URL(window.location.href)
+                console.log(url.searchParams.get("hello"))
+                let cc = document.getElementById("amount")
+                cc.innerHTML = url.searchParams.get("hello")
+              }
+              funA()
+            </script>
+</body>
+</html>

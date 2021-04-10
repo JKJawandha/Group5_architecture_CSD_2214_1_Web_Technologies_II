@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src = "ttps://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+    var Go = false;
+    function sent(){
+        if(document.getElementById("fname").value==""){
+            document.getElementById("error_name").innerHTML="This field is required!";
+            Go = false;
+        }
+        else
+        if(document.getElementById("e-mail").value==""){
+            document.getElementById("s1").innerHTML="This field is required!";
+            Go = false;
+        }
+        if(document.getElementById("lname").value==""){
+            document.getElementById("error_name2").innerHTML="This field is required!";
+            Go = false;
+        }
+        if(document.getElementById("number").value==""){
+            document.getElementById("s2").innerHTML="This field is required!";
+            Go = false;
+        }
+        else if(Go == true){
+            
+            document.getElementById("result").innerHTML="Message Sent";
+        }
+    }
+    
+
+
+    $(document).ready(function(){
+        $("#header").animate({
+                        'font-size':"100"
+                },500)
+                    $(".header").animate({
+                        'padding':'1px 20px 1px 80px'
+                },500)
+
+                    $("#header").animate({
+                        'font-size':"60px"
+                },500)
+                    $(".header").animate({
+                        'padding':'85px 20px 2px 80px'
+                },500)
+    
+        $("#e-mail").focusout(function() {
+        var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        if(pattern.test($("#e_mail").val())) {
+			$("#s1").hide();
+           
+		} else {
+			$("#s1").html("Invalid email address");
+			$("#s1").show();
+            
+		}
+        $("#number").focusout(function() {
+        
+        if($("#number").val().length>10) {
+            $("#s2").html("invalid mobile number");
+			$("#s2").show();
+            Go = false;
+		} else {
+			$("#s2").hide();
+            
+		}
+    })
+})
+});
+
+</script>
+
+</head>
+<body>
+    <div class="whole">
+        <!-- main -->
+    <div class= "image-logo">
+        <div class="logo-nav1">
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="arclogo.jpg"><br>
+            </div>
+            <div class="navbar">
+                <ul>
+
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
+                    <li class="active"><a href="#">CONTACT US</a></li>
+                    <li><div class="search">
+                            <input type="text" placeholder="Search..." name="search"> 
+                        </div>
+                    </li>     
+                    
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="hero-img">
+            <div class="header">
+                <h1 id="header">Contacts</h1><br>
+                <P><a href="home.html">Home</a>  &nbsp; >  &nbsp; <a href="contact.html">Contacts</a></P>    
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="mail1 a">
+            <a><i class="fa fa-fw fa-phone"></i></a><br>
+            <a class="link-default" href="tel:#">1-800-1234-678</a><br>
+            <a class="link-default" href="tel:#">1-800-9876-098</a>
+            
+            
+        </div>
+        <div class="mail1 b">
+            <a><i class="fa fa-envelope"></i></a><br>
+            <a class="link-default" href="mailto:#">info@demolink.org</a>
+        </div>
+        <div class="mail1 c">
+            <a><i class="fa fa-map-marker"></i></a><br>
+            <a class="link-default" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a>
+        </div>
+    </div>
+    <div class="contactus">
+        
+        <div class="twocol">
+            <h1>Contact Us</h1>
+           
+                <div class="col1">
+                    <label>First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_name"></span></label><br>
+                    <input id="fname" type="text" name="name"><br>
+                    <label>E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="s1"></span></label><br>
+                    <input id="e-mail" type="text" name="e-mail">
+                </div>
+                <div class="col1">
+                    <label>Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_name2"></span></label><br>
+                    <input id="lname" type="text" name="name"><br>
+                    <label>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="s2"></span></label><br>
+                    <input id="number" type="text" name="number"><br>
+                </div>
+            
+            <label>Your Message</label><br>
+            <textarea  name="name"></textarea><br>
+            <button id="sent" onclick="sent()">Send Message</button><span id="result"></span>
+        </div>
+		
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335265.8026453997!2d-122.06759916829596!3d35.27875152632528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d955516221f3ef%3A0x1313443aa10bc67e!2sTechno%20Bili%C5%9Fim!5e0!3m2!1sen!2sca!4v1617569026585!5m2!1sen!2sca" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="footer-box">
+
+
+        <footer class="footer">
+            <div class="footer-all">
+             <div class="row-coloum">
+                     <div class="footer-aboutus">
+                         <div class="headings">
+                             <b>ABOUT US</b>
+                         </div>
+                         <p class="footer-text">R&CO company is a diversified global architecture 
+                             company that brings the best designers and 
+                             architects together. We have been offering 
+                             great design solutions to individual and 
+                             corporate customers worldwide since the late 1990s.</p>
+                     </div>
+                     <div class="footer-contact">
+                         <div class="headings">
+                             <b>CONTACT INFORMATION</b>
+                         </div>
+                         <p class="footer-text">
+                             <a><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2130 Fulton street<br>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Diego, CA 94117-1080 UAS</a><br><br>
+                             <a><i class="fa fa-fw fa-phone"></i>&nbsp;&nbsp;&nbsp;1-800-1234-567</a><br><br>
+                             <a><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;info@demolink.org</a>
+                         </p>
+                     </div>
+                     <div class="footer-news">
+                         <div class="headings">
+                             <b>NEWSLETTER</b>
+                         </div>
+                         <P class="footer-text">Sign up to our newsletter and be the first to know 
+                             about the latest news, special offers, events,
+                             and discounts.</P>
+                         <div class="input-email">
+                             <input type="text" placeholder="E-mail">
+                             <button><i class="fa fa-envelope"></i></button>
+                         </div>
+                         
+                     </div>
+                 </div>
+                 <div class="footer-downside">
+                     <div class="footer-logo">
+                        <div class="logo">
+                            <img src="arclogo.jpg">
+                        </div>
+                     </div>
+                     <P class="down-right">&copy;2021 All Rights Reserved. Privacy Policy</P>
+                 </div>
+             </div>
+            
+        </footer>
+        </div>
+        <script>
+        function funA(){
+            let url = new URL(window.location.href)
+            console.log(url.searchParams.get("price"))
+            let cc = document.getElementById("amount")
+            cc.innerHTML = url.searchParams.get("price")
+          }
+          funA()
+        </script>
+</body>
+</html>
